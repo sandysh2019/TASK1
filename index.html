@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        h1, h2 {
+            text-align: center;
+            text-decoration: underline;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color: #2c3e50;">Student Information System</h1>
+
+    <section>
+        <h2>Registered Students</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alex Johnson</td>
+                    <td>21</td>
+                    <td>Computer Science</td>
+                </tr>
+                <tr>
+                    <td>Maria Garcia</td>
+                    <td>22</td>
+                    <td>Data Analytics</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Student Registration Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </fieldset>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+    </section>
+
+</body>
+</html>
